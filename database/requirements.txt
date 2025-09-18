@@ -1,0 +1,18 @@
+# Banking 360 Mockup Database Requirements
+# Python dependencies for the SQLite database scripts
+
+# Core dependencies (these are built into Python 3.6+)
+# sqlite3 - Built into Python standard library
+# pathlib - Built into Python 3.4+
+# typing - Built into Python 3.5+
+
+# No external dependencies required!
+# All scripts use only Python standard library modules:
+# - sqlite3 for database operations
+# - pathlib for file path handling
+# - typing for type hints
+# - json for data serialization (if needed)
+# - datetime for date/time handling
+
+# To run the database scripts, you only need Python 3.6 or later.
+# No pip install required! 

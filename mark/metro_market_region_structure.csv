@@ -1,0 +1,50 @@
+Level,ID,Name,Parent_ID,Portfolio_Value,Client_Count,Revenue,Risk_Score,Notes
+Metro,new-york,New York Metro,,950000000,487,71250000,Medium,Major financial hub
+Market,north-america-east,North America East,new-york,580000000,295,43500000,Medium,Primary US East Coast market
+Region,northeast-corridor,Northeast Corridor,north-america-east,320000000,165,24000000,Medium,NYC-Boston-DC corridor
+Region,mid-atlantic,Mid-Atlantic,north-america-east,260000000,130,19500000,Medium,NY-NJ-PA region
+Market,international-europe,International Europe,new-york,370000000,192,27750000,High,European operations
+Region,uk-ireland,UK & Ireland,international-europe,200000000,105,15000000,High,London-based operations
+Region,continental-europe,Continental Europe,international-europe,170000000,87,12750000,Medium,EU mainland operations
+
+Metro,boston,Boston Metro,,420000000,218,31500000,Low,New England hub
+Market,new-england,New England,boston,420000000,218,31500000,Low,Regional market
+Region,greater-boston,Greater Boston,new-england,250000000,130,18750000,Low,Metropolitan Boston area
+Region,northern-new-england,Northern New England,new-england,170000000,88,12750000,Low,Maine-NH-VT region
+
+Metro,philadelphia,Philadelphia Metro,,380000000,195,28500000,Medium,Mid-Atlantic center
+Market,mid-atlantic-south,Mid-Atlantic South,philadelphia,380000000,195,28500000,Medium,Regional market
+Region,philadelphia-metro,Philadelphia Metro Region,mid-atlantic-south,220000000,115,16500000,Medium,Greater Philadelphia
+Region,delaware-valley,Delaware Valley,mid-atlantic-south,160000000,80,12000000,Medium,DE-South NJ region
+
+Metro,atlanta,Atlanta Metro,,340000000,167,25500000,Medium,Southeast hub
+Market,southeast,Southeast,atlanta,340000000,167,25500000,Medium,Regional market
+Region,georgia-metro,Georgia Metro,southeast,200000000,98,15000000,Medium,Atlanta metropolitan area
+Region,carolinas,Carolinas,southeast,140000000,69,10500000,Medium,NC-SC region
+
+Metro,miami,Miami Metro,,310000000,154,23250000,High,Latin America gateway
+Market,south-florida,South Florida,miami,185000000,92,13875000,High,Regional market
+Region,miami-dade,Miami-Dade,south-florida,110000000,55,8250000,High,Greater Miami area
+Region,broward-palm-beach,Broward-Palm Beach,south-florida,75000000,37,5625000,Medium,North South Florida
+Market,latin-america,Latin America,miami,125000000,62,9375000,High,International market
+Region,caribbean,Caribbean,latin-america,70000000,35,5250000,High,Caribbean operations
+Region,central-america,Central America,latin-america,55000000,27,4125000,High,Central America ops
+
+Metro,chicago,Chicago Metro,,290000000,142,21750000,Medium,Midwest hub
+Market,midwest,Midwest,chicago,290000000,142,21750000,Medium,Regional market
+Region,illinois-metro,Illinois Metro,midwest,170000000,83,12750000,Medium,Greater Chicago area
+Region,great-lakes,Great Lakes,midwest,120000000,59,9000000,Medium,WI-MI-IN region
+
+Metro,london,London Metro,,250000000,128,18750000,High,European headquarters
+Market,europe-west,Europe West,london,150000000,77,11250000,High,Western Europe
+Region,uk-metro,UK Metro,europe-west,90000000,46,6750000,High,Greater London area
+Region,western-europe,Western Europe,europe-west,60000000,31,4500000,Medium,France-Germany-Benelux
+Market,europe-east,Europe East,london,100000000,51,7500000,High,Eastern Europe
+Region,eastern-europe,Eastern Europe,europe-east,60000000,31,4500000,High,Poland-Czech-Hungary
+Region,nordic,Nordic,europe-east,40000000,20,3000000,Medium,Scandinavia region
+
+Metro,toronto,Toronto Metro,,250000000,125,18750000,Medium,Canadian headquarters
+Market,canada,Canada,toronto,250000000,125,18750000,Medium,National market
+Region,ontario,Ontario,canada,150000000,75,11250000,Medium,Central Canada
+Region,western-canada,Western Canada,canada,60000000,30,4500000,Medium,BC-AB-SK-MB
+Region,eastern-canada,Eastern Canada,canada,40000000,20,3000000,Low,QC-Atlantic provinces 

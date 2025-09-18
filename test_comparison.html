@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Detail View Comparison</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+        }
+        .subtitle {
+            color: #666;
+            margin-top: 10px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+        .frame-container {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .frame-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+        .api-header {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+        .info-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            color: #856404;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 4px;
+        }
+        .links {
+            margin: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Client Detail View: Mock vs API Comparison</h1>
+        <div class="subtitle">Johnson Manufacturing LLC - Side by Side Comparison</div>
+    </div>
+    
+    <div class="info-box">
+        <strong>Test Instructions:</strong>
+        <ul>
+            <li>Make sure the backend server is running: <code>cd backend && uvicorn app:app --reload --port 8000</code></li>
+            <li>Make sure the frontend is running: <code>npm run dev</code></li>
+            <li>The left panel shows the original view using mock data</li>
+            <li>The right panel shows the new view using API data</li>
+            <li>Both views should display identical data and UI</li>
+        </ul>
+    </div>
+    
+    <div class="links">
+        <a href="http://localhost:3001/metro/ny-metro/market/manhattan/region/northeast-corridor/rm/rm-001/relationship/rel-001/client/client-001" class="link" target="_blank">
+            Open Mock View in New Tab
+        </a>
+        <a href="http://localhost:3001/api/metro/ny-metro/market/manhattan/region/northeast-corridor/rm/rm-001/relationship/rel-001/client/client-001" class="link" target="_blank">
+            Open API View in New Tab
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="frame-container">
+            <div class="frame-header">ORIGINAL (Mock Data)</div>
+            <iframe src="http://localhost:3001/metro/ny-metro/market/manhattan/region/northeast-corridor/rm/rm-001/relationship/rel-001/client/client-001"></iframe>
+        </div>
+        <div class="frame-container">
+            <div class="frame-header api-header">NEW (API Data)</div>
+            <iframe src="http://localhost:3001/api/metro/ny-metro/market/manhattan/region/northeast-corridor/rm/rm-001/relationship/rel-001/client/client-001"></iframe>
+        </div>
+    </div>
+</body>
+</html>
